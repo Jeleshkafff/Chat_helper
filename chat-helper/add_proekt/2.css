@@ -1,0 +1,50 @@
+
+.wrapper{
+    display: flex;
+    gap:58px;
+}
+.asidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.asidebar a:active{
+    color: rgb(221, 194, 44);
+    margin: 10px;
+}
+
+.asidebar a:link{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+
+.dan{
+    width: 680px;
+    height: 20px;
+    padding: 12px 20px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+input{
+    width: 316px;
+    height: 40px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.teem input{
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+}
