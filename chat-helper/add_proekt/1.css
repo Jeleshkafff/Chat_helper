@@ -7,6 +7,7 @@
 .botStyle{
     position: absolute;
     right: 0;
+    bottom:0
 }
 .asidebar a{
     display: block;
@@ -48,5 +49,24 @@ p{
 .openBot img{
     width: 50px;
     height: 50px;
+}
+
+.inputs{
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "a b"
+}
+/* .linkNotification{
+    background-color:black
+} */
+.linkNotification::before{
+    /* display: flex; */
+    content:"●";
+    
+    /* background: url("../public/tochka.png"); */
+    width: 30px;
+    height: 30px;
+    /* background-color:black */
 }
 

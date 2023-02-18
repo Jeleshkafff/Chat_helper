@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     display: flex;
+    
 }
 
 p{
@@ -45,21 +46,14 @@ ul{
     justify-content: center;
 }
 
-.notification {
-    width: 300px;
-    border: 3px solid #b81a1a;
-}
 
-.notification img{
-    width: 50px;
-    height: 50px;
-}
 
-.notification-div{
+
+/* .notification-div{
     display: flex;
     width: 300px;
     min-height: 100px;
-}
+} */
 
 
 .chat-bot{
@@ -109,11 +103,11 @@ ul{
 }
 .wind_top{
     display: flex;
-    gap: 140px;
+    gap: 70px;
     width: 300px;
     height: 60px;
     background-color:#4ff02d;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     /* border:2px; */
 }
@@ -125,10 +119,22 @@ ul{
 }
 
 .wind_top img{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     /* margin-left: 58px; */
     border-radius: 100%;
+}
+
+.bot-div {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* width: 300px;
+    border: 3px solid #b81a1a; */
+}
+.bot-div img{
+    width: 60px;
+    height: 60px;
 }
 
 .bot_chat{
@@ -151,7 +157,7 @@ footer{
     display: flex;
     /* position: absolute; */
     bottom:0px;
-    gap: 20px;
+    /* gap: 20px; */
 
     width: 300px;
     height: 50px;
@@ -165,6 +171,7 @@ footer{
 footer input{
     width: 150px;
     height: 30px;
+    margin-top: 0;
 }
 
 footer img{
@@ -193,4 +200,28 @@ footer img{
 
     background: rgb(160, 80, 240);
     border-radius: 15px;
+}
+
+.botStyle{
+    /* position: sticky; */
+    position: fixed;
+    right: 2%;
+    bottom:0
+}
+.active{
+    display: block;
+}
+.unActive{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.closeForm{
+    padding-left:5px;
+}
+.addMicro{
+    border:none;
+    outline:none;
+    background-color: #9362df50;
 }
