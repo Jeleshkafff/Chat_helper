@@ -1,3 +1,13 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.botStyle{
+    position: absolute;
+    right: 0;
+}
 .asidebar a{
     display: block;
     text-decoration: none;
@@ -16,7 +26,7 @@
 }
 
 
-input{
+.info input{
     width: 316px;
     height: 40px;
     padding-right: 20px;
@@ -35,3 +45,8 @@ select{
 p{
     font-size: 20px;
 }
+.openBot img{
+    width: 50px;
+    height: 50px;
+}
+

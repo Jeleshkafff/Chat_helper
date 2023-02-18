@@ -1,3 +1,4 @@
+import div1 from "../botForm.js"
 function shineLinks(){
         let el=document.getElementsByTagName('a');
         console.log(el.length)
@@ -11,5 +12,7 @@ function shineLinks(){
             };
         }
     }
-
-    shineLinks()
+div1.classList.add("botStyle")
+shineLinks()
+console.log(div1);
+document.body.append(div1)

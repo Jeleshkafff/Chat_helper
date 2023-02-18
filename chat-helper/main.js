@@ -1,57 +1,77 @@
-
-
 const nameInput = document.querySelector(".form-name")
 const surnameInput = document.querySelector(".form-surname")
 const botContainer = document.querySelector(".bot-container")
 const botInput = document.querySelector("#bot-input")
-const formBot = document.querySelector(".chat-bot")
+const formBot = document.querySelector(".chat-bot") 
+const openBot = document.querySelector(".openBot")
+// const notificationBtn = document.querySelector(".notification")
+// const notificationContainer = document.querySelector(".notification-div")
+// notificationContainer.style.display = "none"
+
+// notificationBtn.addEventListener("click",()=>{
+//     notificationContainer.style.display = "block" 
+// })
+
+// document.querySelector(".close-notification").addEventListener("click",()=>{
+//     notificationContainer.style.display = "none" 
+// })
 const btnBot = document.querySelector(".btnBot")
 let objData = {
+//привет
 }
-console.log(formBot);
-let phase = 1
+let phase = 0
 function helper(){
-    console.log(1);
-    if(nameInput.value.length == 0){ 
-        botContainer.innerHTML = `заполните поле имя<br>`
-    }
+    botContainer.innerHTML += `для краткой справки введите help<br>`
+    // if(nameInput.value.length == 0){ 
+    //     botContainer.innerHTML += `заполните поле имя<br>`
+    // }
 }
 formBot.addEventListener("submit",(e)=>{
     e.preventDefault()
-    console.log(botInput.value);
     console.log(phase);
+    if(botInput.value.length == 0){
+        return
+    }
+    if(botInput.value == "help"){
+        botContainer.innerHTML += `Какая-то помощь<br>`
+    }
+    if(botInput.value == "привет"){
+        botContainer.innerHTML += `привет, я Аврора, чем могу помочь?<br>`
+        botContainer.innerHTML += `привет, я Аврора, чем могу помочь?<br>`
+    }
+    if(botInput.value == "форма"){
+        phase = 1
+        botInput.value = ""
+        botContainer.innerHTML += `заполните поле имя<br>`
+        return
+    }
     if(phase == 1){
-        if(botInput.value == 0){
-            return
-        }
+       
         objData.nameUser = botInput.value
         nameInput.value = objData.nameUser
-        botInput.value = ""
         botContainer.innerHTML += `заполните поле фамилия<br>`
         phase = 2
+        botInput.value = ""
         return
     }
     if(phase==2){
+        
         objData.surnameUser = botInput.value
-        console.log(objData.surnameUser);
-        surnameInput.value = objData.surnameUser
-        botInput.value = ""  
+        surnameInput.value = objData.surnameUser   
         phase = 3
         botContainer.innerHTML += `Круто, вы все заполнили<br>`
+        botInput.value = ""
     }
     if(phase == 3){
         console.log("Все данные заполнены");
         return
     }
-    console.log(phase);
+    botInput.value = ""
 })
-
-
 helper()
-
-
-
 const artyom = new Artyom();
+
+// artyom.say("Хочу пиццы")
 
 function startOneCommandArtyom(){
     artyom.fatality();// use this to stop any of
@@ -69,8 +89,33 @@ function startOneCommandArtyom(){
     },250);
 }
 
+let commandHello = {
+    indexes:["hello","good morning","hey"], // These spoken words will trigger the execution of the command
+    action:function(){ // Action to be executed when a index match with spoken word
+        artyom.say("Hey buddy ! How are you today?");
+    }
+};
+artyom.addCommands(commandHello);
 
-btnBot.addEventListener("click",()=>{
-    artyom.say("Нам, хана")
-    startOneCommandArtyom()
-})
+let fillIn = {
+    indexes:["заполни","поле"],
+    action:function(){
+        
+    }
+}
+
+// btnBot.addEventListener("click",()=>{
+//     startOneCommandArtyom()
+// })
+
+function answerOnQuestions(){
+    const input = document.querySelector(".bot-chat-input")
+
+    input.addEventListener("change",()=>{
+
+    })
+
+}
+
+
+

@@ -7,19 +7,63 @@
     <title>Document</title>
     <script src="./artyom.window.min.js" defer></script>
     <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./bot.js" defer></script>
 </head>
 <body>
+
+    <!-- Уведомления -->
+      <!-- <div class="notification">
+        
+        <img src="./public/notification.png" alt="">
+      </div>
+      <div class="notification-div" > 
+        <div class="close-notification">
+          <img src="./public/close.svg" alt="">
+        </div>
+        <div class="div-info">
+          Вы успешно зарегистрированы
+        </div> --> 
+      <!-- </div> -->
       <form class="chat-bot">
         <p>Ваш помощник</p>
         <div class="bot-container"></div>
-        <textarea name="" id="bot-input" cols="30" rows="10"></textarea>
+        <div class="inp_but">
+           <input type="text" id="bot-input">
+        <!-- <textarea name="" id="bot-input" cols="30" rows="10"></textarea> -->
         <button class="btn-send">Отправить</button>
+        </div>
+        <div class="form-block">
+          <input type="text" placeholder="Имя" class="form-name">
+          <input type="text" placeholder="Фамилия" class="form-surname">
+        </div>
+        <button class="btnBot">asd</button>
       </form>
-      <div class="form-block">
-        <input type="text" placeholder="Имя" class="form-name">
-        <input type="text" placeholder="Фамилия" class="form-surname">
-      </div>
 
-      <button class="btnBot">asd</button>
+
+      <form class="bot_chat">
+        <div class="wind_top">
+          <p>Аврора</p>
+          <img src="./public/bot.svg" alt="Лого">
+        </div>
+        <main>
+          <p class="help-p">введите, "помоги", если нужна помощь</p>
+          <ul class="container-message"></ul>
+        </main>
+        <footer>
+          <img src="./public/micro.svg" alt="картинка">
+          <input class="bot-chat-input" list="historyInp" type="text" placeholder="Введите текст" >
+          <button class="btnNoStyle" >
+            <img src="./public/send.svg" alt="стрелочка">
+          </button>
+          
+        </footer>
+      </form>
+      <datalist id="historyInp">
+        <option>как выжить</option>
+        <option>как не умереть</option>
+        <option>как не выжить из ума</option>
+        <option>что, если выхода нет</option>
+      </datalist>
 </body>
 </html>
