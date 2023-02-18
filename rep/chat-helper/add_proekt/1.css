@@ -1,0 +1,60 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.botStyle{
+    position: absolute;
+    right: 0;
+    bottom:0
+}
+.asidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.asidebar a:link{
+    color: rgba(0, 0, 0);
+    margin: 10px;
+}
+
+.wrapper{
+    display: flex;
+    gap:58px;
+}
+
+
+.info input{
+    width: 316px;
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+select{
+    width: 360px;
+    height: 46px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+.openBot img{
+    width: 50px;
+    height: 50px;
+}
+
+.inputs{
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "a b"
+}
+

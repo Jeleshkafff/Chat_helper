@@ -1,0 +1,17 @@
+.asidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.asidebar a:link{
+    color: rgba(0, 0, 0);
+    margin: 10px;
+}
+
+.wrapper{
+    display: flex;
+    gap:58px;
+}
+
