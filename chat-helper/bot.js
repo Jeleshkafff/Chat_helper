@@ -92,7 +92,7 @@ function forMicro(textNew){
             localStorage.setItem("infoInputsFill",JSON.stringify(objCounts))
         }
         // for(allInputs)
-        addMessage(`Профент заполненый полей: ${(objCounts.filled/objCounts.allCount).toFixed(2)} %`,false)
+        addMessage(`Профент заполненый полей: ${(objCounts.filled/objCounts.allCount).toFixed(2)*100} %`,false)
         // phase = 1
         // botInput.value = ""
         // botContainer.innerHTML += `заполните поле имя<br>`
